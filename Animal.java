@@ -6,14 +6,15 @@ public class Animal{
     private boolean etat;
     private double poids;
 
+    // Constructeur de base
     public Animal(){
         this.name = "unknown";
         this.age = 0;
         this.etat = true;
-        this.poids = 0;
-    }
+        this.poids = 0.0;
+    }
 
-    // Constructeur
+    // Constructeur plus poussé
     public Animal(String name, int age, boolean etat, double poids){
         this.name = name;
         this.age = age;
@@ -30,8 +31,8 @@ public class Animal{
         this.poids = new_poids;
     }
 
-    public void changeAge(int new_age){
-        this.age = new_age;
+    public void vieillir(){
+        this.age += 1;
     }
 
     public void changeName(String new_name){
@@ -59,5 +60,11 @@ public class Animal{
         }
     }
 
-    public void afficheType{}
+    public String getCri(){
+        return "";
+    }
+
+    public String typeAnimal(){
+        return "";
+    }
 }
